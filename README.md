@@ -41,25 +41,25 @@ Since the tests are simply unit tests, this may be familiar to a lot of people.
 Provide the class name.
 
 ```
-python3 -m unittest -v chido_test.MistTest
-test001BaseConfigOfficeMist (chido_test.MistTest) ... ok
-test002BaseConfigRFSiloMist (chido_test.MistTest) ... ok
-test003DeserializeMist (chido_test.MistTest) ... ok
-test004FiveRadio20Cycle (chido_test.MistTest) ... ok
-test005FiveRadio40Cycle (chido_test.MistTest) ... ok
-test006FiveRadio80Cycle (chido_test.MistTest) ... ok
-test007TwoRadioCycle (chido_test.MistTest) ... WARNING:retry.api:Leaf "channel" mismatch on AP zz-tri-esdn04-02-100.n.corp.google.com.  Expected "1", got "11", retrying in 10 seconds...
-WARNING:retry.api:Leaf "channel" mismatch on AP zz-tri-esdn04-02-100.n.corp.google.com.  Expected "1", got "11", retrying in 10 seconds...
+python3 -m unittest -v chido_test.AristaTest
+test001BaseConfigOfficeMist (chido_test.AristaTest) ... ok
+test002BaseConfigRFSiloMist (chido_test.AristaTest) ... ok
+test003DeserializeMist (chido_test.AristaTest) ... ok
+test004FiveRadio20Cycle (chido_test.AristaTest) ... ok
+test005FiveRadio40Cycle (chido_test.AristaTest) ... ok
+test006FiveRadio80Cycle (chido_test.AristaTest) ... ok
+test007TwoRadioCycle (chido_test.AristaTest) ... WARNING:retry.api:Leaf "channel" mismatch on AP ap-02-100.example.com.  Expected "1", got "11", retrying in 10 seconds...
+WARNING:retry.api:Leaf "channel" mismatch on AP ap-02-100.example.com.  Expected "1", got "11", retrying in 10 seconds...
 ok
-test008FiveRadioPowerCycle (chido_test.MistTest) ... ERROR
-test009FiveRadioDisable (chido_test.MistTest) ... WARNING:retry.api:Radio "0" config does not match config sent, retrying in 10 seconds...
+test008FiveRadioPowerCycle (chido_test.AristaTest) ... ERROR
+test009FiveRadioDisable (chido_test.AristaTest) ... WARNING:retry.api:Radio "0" config does not match config sent, retrying in 10 seconds...
 ok
-test010TwoRadioDisable (chido_test.MistTest) ... ok
-test011SSIDBase (chido_test.MistTest) ... ok
-test012SSIDAlternetate (chido_test.MistTest) ... ERROR
-test013Dot11rBase (chido_test.MistTest) ... ok
-test016DisableSSH (chido_test.MistTest) ... ok
-test017ProvisionUS (chido_test.MistTest) ... ok
+test010TwoRadioDisable (chido_test.AristaTest) ... ok
+test011SSIDBase (chido_test.AristaTest) ... ok
+test012SSIDAlternetate (chido_test.AristaTest) ... ERROR
+test013Dot11rBase (chido_test.AristaTest) ... ok
+test016DisableSSH (chido_test.AristaTest) ... ok
+test017ProvisionUS (chido_test.AristaTest) ... ok
 ```
 
 ### Running a single test
@@ -71,9 +71,9 @@ name.
 python3 -m unittest -v chido_test.AristaTest.test005FiveRadio40Cycle
 test005FiveRadio40Cycle (chido_test.AristaTest) ... importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
   class TypedList(collections.MutableSequence):
-WARNING:retry.api:Leaf "channel" mismatch on AP zz-tri-esdn04-02-102.n.corp.google.com.  Expected "44", got "36", retrying in 10 seconds...
-WARNING:retry.api:Leaf "channel" mismatch on AP zz-tri-esdn04-02-102.n.corp.google.com.  Expected "44", got "36", retrying in 10 seconds...
-WARNING:retry.api:Leaf "channel" mismatch on AP zz-tri-esdn04-02-102.n.corp.google.com.
+WARNING:retry.api:Leaf "channel" mismatch on AP ap-02-102.example.com.  Expected "44", got "36", retrying in 10 seconds...
+WARNING:retry.api:Leaf "channel" mismatch on AP ap-02-102.example.com.  Expected "44", got "36", retrying in 10 seconds...
+WARNING:retry.api:Leaf "channel" mismatch on AP ap-02-102.example.com.
 ok
 
 ----------------------------------------------------------------------
