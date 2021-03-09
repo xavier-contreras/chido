@@ -1,0 +1,5 @@
+{
+  "openconfig-access-points:dot11r-r1key-timeout": 1600,
+  "openconfig-access-points:dot11r-method": "ODS",
+  "openconfig-access-points:dot11r": true
+}

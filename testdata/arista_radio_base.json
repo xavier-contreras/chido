@@ -1,0 +1,11 @@
+{
+  "openconfig-access-points:operating-frequency": "FREQ_5GHZ",
+  "openconfig-access-points:enabled": true,
+  "openconfig-access-points:scanning": false,
+  "openconfig-access-points:channel-width": 40,
+  "openconfig-access-points:id": 0,
+  "openconfig-access-points:channel": 36,
+  "openconfig-access-points:dtp": false,
+  "openconfig-access-points:dca": false,
+  "openconfig-access-points:transmit-power": 6
+}

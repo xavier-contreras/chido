@@ -1,0 +1,146 @@
+{
+  "hostname": "ap-02-104.example.com",
+  "radios": {
+    "radio": [
+      {
+        "id": 0,
+        "config": {
+          "id": 0,
+          "operating-frequency": "openconfig-wifi-types:FREQ_5GHZ",
+          "enabled": true,
+          "transmit-power": 9,
+          "channel": 165,
+          "channel-width": 20,
+          "dca": false,
+          "dtp": false,
+          "scanning": false
+        }
+      },
+      {
+        "id": 1,
+        "config": {
+          "id": 1,
+          "operating-frequency": "openconfig-wifi-types:FREQ_2GHZ",
+          "enabled": true,
+          "transmit-power": 4,
+          "channel-width": 20,
+          "dca": true,
+          "dtp": false,
+          "scanning": false
+        }
+      }
+    ]
+  },
+  "ssids": {
+    "ssid": [
+      {
+        "name": "wl-chido1",
+        "config": {
+          "name": "wl-chido1",
+          "enabled": true,
+          "hidden": false,
+          "default-vlan": 74,
+          "operating-frequency": "openconfig-wifi-types:FREQ_2_5_GHZ",
+          "basic-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "supported-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "broadcast-filter": false,
+          "station-isolation": true,
+          "opmode": "OPEN",
+          "dhcp-required": false,
+          "qbss-load": true,
+          "advertise-apname": true,
+          "csa": true,
+          "dot11k": true
+        },
+        "dot11r": {
+          "config": {
+            "dot11r": false
+          }
+        }
+      },
+      {
+        "name": "wl-chido2",
+        "config": {
+          "name": "wl-chido2",
+          "enabled": true,
+          "hidden": false,
+          "operating-frequency": "openconfig-wifi-types:FREQ_2_5_GHZ",
+          "basic-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "supported-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "broadcast-filter": false,
+          "station-isolation": false,
+          "opmode": "WPA2_PERSONAL",
+          "wpa2-psk": "/key/labs",
+          "dva": true,
+          "dhcp-required": false,
+          "qbss-load": true,
+          "advertise-apname": true,
+          "csa": true,
+          "dot11k": true
+        },
+        "dot11r": {
+          "config": {
+            "dot11r": false
+          }
+        }
+      },
+      {
+        "name": "chido3",
+        "config": {
+          "name": "chido3",
+          "enabled": true,
+          "hidden": false,
+          "operating-frequency": "openconfig-wifi-types:FREQ_2_5_GHZ",
+          "basic-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "supported-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "broadcast-filter": false,
+          "station-isolation": false,
+          "opmode": "WPA2_PERSONAL",
+          "wpa2-psk": "/key/labs",
+          "dva": true,
+          "dhcp-required": false,
+          "qbss-load": true,
+          "advertise-apname": true,
+          "csa": true,
+          "dot11k": true
+        },
+        "dot11r": {
+          "config": {
+            "dot11r": false
+          }
+        }
+      }
+    ]
+  },
+  "system": {
+    "ssh-server": {
+      "config": {
+        "enable": false
+      }
+    }
+  }
+}

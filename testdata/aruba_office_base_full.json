@@ -1,0 +1,217 @@
+{
+  "hostname": "ap-02-104.example.com",
+  "radios": {
+    "radio": [
+      {
+        "id": "0",
+        "config": {
+          "id": 0,
+          "operating-frequency": "openconfig-wifi-types:FREQ_5GHZ",
+          "enabled": true,
+          "transmit-power": 9,
+          "channel-width": 40,
+          "dca": true,
+          "dtp": false,
+          "scanning": false
+        }
+      },
+      {
+        "id": "1",
+        "config": {
+          "id": 1,
+          "operating-frequency": "openconfig-wifi-types:FREQ_2GHZ",
+          "enabled": true,
+          "transmit-power": 4,
+          "channel-width": 20,
+          "dca": true,
+          "dtp": false,
+          "scanning": false
+        }
+      }
+    ]
+  },
+  "ssids": {
+    "ssid": [
+      {
+        "name": "Test-A",
+        "config": {
+          "name": "Test-A",
+          "enabled": true,
+          "hidden": false,
+          "default-vlan": 250,
+          "operating-frequency": "openconfig-wifi-types:FREQ_5GHZ",
+          "basic-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "supported-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "broadcast-filter": true,
+          "station-isolation": true,
+          "opmode": "WPA2_ENTERPRISE",
+          "server-group": "Test-A-srv_grp",
+          "dva": true,
+          "dhcp-required": false,
+          "qbss-load": true,
+          "advertise-apname": true,
+          "csa": true,
+          "dot11k": true,
+          "okc": false
+        },
+        "dot11r": {
+          "config": {
+            "dot11r": false
+          }
+        },
+        "dot1x-timers": {
+          "config": {
+            "max-auth-failures": 5
+          }
+        }
+      },
+      {
+        "name": "ChidoGen",
+        "config": {
+          "name": "ChidoGen",
+          "enabled": true,
+          "hidden": false,
+          "default-vlan": 666,
+          "operating-frequency": "openconfig-wifi-types:FREQ_2_5_GHZ",
+          "basic-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "supported-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "broadcast-filter": true,
+          "station-isolation": true,
+          "opmode": "OPEN",
+          "dhcp-required": false,
+          "qbss-load": true,
+          "advertise-apname": true,
+          "csa": true,
+          "dot11k": true
+        },
+        "dot11r": {
+          "config": {
+            "dot11r": false
+          }
+        }
+      },
+      {
+        "name": "TestGuestPSK-Legacy",
+        "config": {
+          "name": "TestGuestPSK-Legacy",
+          "enabled": true,
+          "hidden": false,
+          "default-vlan": 666,
+          "operating-frequency": "openconfig-wifi-types:FREQ_2GHZ",
+          "basic-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "supported-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "broadcast-filter": true,
+          "station-isolation": true,
+          "opmode": "WPA2_PERSONAL",
+          "wpa2-psk": "/key/TestGuestPSK-Legacy",
+          "dva": true,
+          "dhcp-required": false,
+          "qbss-load": true,
+          "advertise-apname": true,
+          "csa": true,
+          "dot11k": true
+        },
+        "dot11r": {
+          "config": {
+            "dot11r": false
+          }
+        }
+      },
+      {
+        "name": "TestGuestPSK",
+        "config": {
+          "name": "TestGuestPSK",
+          "enabled": true,
+          "hidden": false,
+          "default-vlan": 666,
+          "operating-frequency": "openconfig-wifi-types:FREQ_5GHZ",
+          "basic-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "supported-data-rates": [
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+          ],
+          "broadcast-filter": true,
+          "station-isolation": true,
+          "opmode": "WPA2_PERSONAL",
+          "wpa2-psk": "/key/TestGuestPSK",
+          "dva": true,
+          "dhcp-required": false,
+          "qbss-load": true,
+          "advertise-apname": true,
+          "csa": true,
+          "dot11k": true
+        },
+        "dot11r": {
+          "config": {
+            "dot11r": false
+          }
+        }
+      }
+    ]
+  },
+  "system": {
+    "ssh-server": {
+      "config": {
+        "enable": false
+      }
+    },
+    "aaa": {
+      "server-groups": {
+        "server-group": [
+          {
+            "name": "Test-A-srv_grp",
+            "config": {
+              "name": "Test-A-srv_grp",
+              "type": "openconfig-aaa:RADIUS"
+            },
+            "servers": {
+              "server": [
+                {
+                  "address": "10.10.10.10",
+                  "config": {
+                    "address": "10.10.10.10"
+                  },
+                  "radius": {
+                    "config": {
+                      "auth-port": 1812,
+                      "secret-key": "/key/radius"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

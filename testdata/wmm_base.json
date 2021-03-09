@@ -1,0 +1,7 @@
+{
+  "openconfig-access-points:trust-dscp": false,
+  "openconfig-access-points:wmm-vo-remark": [
+    1,
+    2
+  ]
+}

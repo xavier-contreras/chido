@@ -1,0 +1,40 @@
+{
+  "openconfig-access-points:dot11k": false,
+  "openconfig-access-points:default-vlan": 999,
+  "openconfig-access-points:advertise-apname": false,
+  "openconfig-access-points:operating-frequency": "FREQ_5GHZ",
+  "openconfig-access-points:multicast-filter": false,
+  "openconfig-access-points:broadcast-filter": false,
+  "openconfig-access-points:supported-data-rates-5g": [
+    "RATE_1MB",
+    "RATE_2MB",
+    "RATE_5.5MB",
+    "RATE_6MB",
+    "RATE_9MB",
+    "RATE_11MB",
+    "RATE_12MB",
+    "RATE_18MB",
+    "RATE_24MB",
+    "RATE_36MB",
+    "RATE_48MB",
+    "RATE_54MB"
+  ],
+  "openconfig-access-points:station-isolation": false,
+  "openconfig-access-points:hidden": true,
+  "openconfig-access-points:name": "ChidoTestGuest",
+  "openconfig-access-points:qbss-load": false,
+  "openconfig-access-points:basic-data-rates-5g": [
+    "RATE_1MB",
+    "RATE_2MB",
+    "RATE_5.5MB",
+    "RATE_6MB",
+    "RATE_9MB",
+    "RATE_11MB",
+    "RATE_12MB",
+    "RATE_18MB",
+    "RATE_24MB",
+    "RATE_36MB",
+    "RATE_48MB",
+    "RATE_54MB"
+  ]
+}

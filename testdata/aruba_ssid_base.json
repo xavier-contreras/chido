@@ -1,0 +1,21 @@
+{
+  "openconfig-access-points:dot11k": true,
+  "openconfig-access-points:default-vlan": 666,
+  "openconfig-access-points:advertise-apname": true,
+  "openconfig-access-points:operating-frequency": "openconfig-wifi-types:FREQ_5GHZ",
+  "openconfig-access-points:broadcast-filter": true,
+  "openconfig-access-points:supported-data-rates": [
+    "RATE_36MB",
+    "RATE_48MB",
+    "RATE_54MB"
+  ],
+  "openconfig-access-points:station-isolation": true,
+  "openconfig-access-points:hidden": false,
+  "openconfig-access-points:name": "ChidoTestGuest",
+  "openconfig-access-points:qbss-load": true,
+  "openconfig-access-points:basic-data-rates": [
+    "RATE_36MB",
+    "RATE_48MB",
+    "RATE_54MB"
+  ]
+}

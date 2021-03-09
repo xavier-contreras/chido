@@ -1,0 +1,35 @@
+{
+  "openconfig-access-points:ssh-server": {
+    "config": {
+      "enable": false
+    }
+  },
+  "openconfig-access-points:aaa": {
+    "server-groups": {
+      "server-group": [
+        {
+          "config": {
+            "type": "openconfig-aaa:RADIUS",
+            "name": "Chido-A-srv_grp"
+          },
+          "name": "Chido-A-srv_grp",
+          "servers": {
+            "server": [
+              {
+                "config": {
+                  "address": "10.10.10.10"
+                },
+                "radius": {
+                  "config": {
+                    "secret-key": "/key/radius"
+                  }
+                },
+                "address": "10.10.10.10"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

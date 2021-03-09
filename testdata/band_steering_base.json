@@ -1,0 +1,4 @@
+{
+    "openconfig-access-points:band-steering": true,
+    "openconfig-access-points:steering-rssi": 18
+}

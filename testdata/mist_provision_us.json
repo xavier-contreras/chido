@@ -1,0 +1,5 @@
+{
+  "openconfig-ap-manager:hostname": "ap-02-100.example.com",
+  "openconfig-ap-manager:country-code": "US",
+  "openconfig-ap-manager:mac": "5C:5B:35:0E:34:DF"
+}
